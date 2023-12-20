@@ -25,6 +25,11 @@ class SummarizationController extends Controller
             $data = $response->json();
             $modelSummary = $data[0]['generated_text'];
 
+            $summary = Summary::create([
+                'original_text' => $inputText,
+                'summary' => $modelSummary,
+            ]);
+
             return response()->json(['summary' => $modelSummary, 'id' => $summary->id]);
         } catch (RequestException $e) {
             \Log::error('Hugging Face API Request Exception: ' . $e->getMessage());
@@ -36,5 +41,21 @@ class SummarizationController extends Controller
 
             return response()->json(['error' => $errorMessage], 500);
         }
+    }
+
+    public function getSummaries(Request $request)
+    {
+        $page = $request->input('page', 1);
+        $perPage = $request->input('perPage', 5);
+
+        $summaries = Summary::orderBy('created_at', 'desc')
+            ->skip(($page - 1) * $perPage)
+            ->take($perPage)
+            ->get();
+
+        $totalSummaries = Summary::count();
+        $totalPages = ceil($totalSummaries / $perPage);
+
+        return response()->json(['summaries' => $summaries, 'totalPages' => $totalPages]);
     }
 }
