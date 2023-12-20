@@ -11,10 +11,10 @@
 <h4 align="center">Repository ini merupakan tugas dari matakuliah Natural Language Processing dan isinya mengenai kode dan sumber daya untuk fine-tuning model transformer untuk generate ringkasan menggunakan perpustakaan Hugging Face Transformers</h4>
 
 <p align="center">
-  <a href="#Gambaran Umum">Gambaran Umum</a> •
-  <a href="#Persyaratan">Persyaratan</a> •
+  <a href="#gambaran-umum">Gambaran Umum</a> •
+  <a href="#persyaratan">Persyaratan</a> •
   <a href="#Catatan">Catatan</a> •
-  <a href="#Instalasi">Instalasi</a>
+  <a href="#how-to-use">How to Use</a>
 </p>
 
 
