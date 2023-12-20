@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="[https://github.com/khrsnawdnt/FineTuningT5-NLP/img/logo.png](https://github.com/khrsnawdnt/FineTuningT5-NLP/blob/0fb43f24a56fd541c50cfd8b56a308a2ac79e26d/img/logo.png)" alt="K3 Summarization" width="200">
+  <img src="https://github.com/khrsnawdnt/FineTuningT5-NLP/blob/0fb43f24a56fd541c50cfd8b56a308a2ac79e26d/img/logo.png" alt="K3 Summarization" width="200">
   <br>
   K3 Summarization [Fine-Tuning Transformer for Summary Generation]
   <br>
