@@ -24,11 +24,11 @@ Summarization adalah tugas pemrosesan bahasa alami (NLP) yang melibatkan penyusu
 
 ## Persyaratan
 
-•	Python 3.x <br>
-•	PyTorch <br>
-•	Hugging Face Transformers (https://huggingface.co/) <br>
-•	Dataset from Kaggle (https://www.kaggle.com/code/eggwhites2705/transformers-summarization-t5/input) <br>
-•	Model T5 <br>
+*	Python 3.x
+*	PyTorch
+*	Hugging Face Transformers (https://huggingface.co/)
+*	Dataset from Kaggle (https://www.kaggle.com/code/eggwhites2705/transformers-summarization-t5/input)
+*	Model T5
 
 ## Instalasi
 
