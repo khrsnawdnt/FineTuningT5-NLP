@@ -22,9 +22,15 @@
 
 Summarization adalah tugas pemrosesan bahasa alami (NLP) yang melibatkan penyusutan informasi dari teks yang diberikan menjadi versi yang lebih pendek sambil tetap mempertahankan makna utamanya. Proyek ini berfokus pada fine-tuning model berbasis transformer, memanfaatkan kekuatan representasi bahasa yang telah dilatih sebelumnya, untuk tugas khusus meng-generate teks yang sudah diringkas.
 
-## How To Use
+## Persyaratan
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+•	Python 3.x
+•	PyTorch
+•	Hugging Face Transformers (https://huggingface.co/)
+•	Dataset from Kaggle (https://www.kaggle.com/code/eggwhites2705/transformers-summarization-t5/input)
+•	Model T5
+
+## Instalasi
 
 ```bash
 # Clone this repository
@@ -40,48 +46,17 @@ $ npm install
 $ npm start
 ```
 
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+## Catatan
+Kami menggunakan Model T5 dan pada Dataset ini kami menggunakan dataset berita berbahasa inggris. Kenapa bahasa inggris? Karena pada model T5 hanya bisa menghasilkan bahasa inggris, jika ingin menggunakan bahasa lainnya harus menggunakan model MT5
 
+Kemudian kami melakukan Training Loop. Kenapa? Karena Training loop digunakan dalam proses fine-tuning model machine learning untuk mengoptimalkan parameter model agar sesuai dengan data pelatihan. Training loop adalah iterasi berulang yang terdiri dari langkah-langkah seperti pembacaan batch data, perhitungan nilai loss, dan pembaruan parameter model menggunakan metode optimasi. Loop ini memungkinkan model untuk secara adaptif menyesuaikan diri dengan data pelatihan, meningkatkan kinerja, dan mengurangi nilai loss. Selama fine-tuning transformer untuk generasi ringkasan, training loop diperlukan agar model dapat belajar dari data pelatihan yang spesifik untuk tugas tersebut. Melalui beberapa iterasi training, model dapat menyesuaikan bobotnya agar dapat menghasilkan ringkasan yang sesuai dengan kebutuhan.
 
-## Download
+Pada Matriks T5 ini berbeda dari beberapa model lainnya, contohnya seperti Rouge. Pada Model T5 untuk mencari akurasi modelnya menggunakan Rouge, apa itu Rouge? ROUGE (Recall-Oriented Understudy for Gisting Evaluation) adalah kumpulan metrik evaluasi yang digunakan untuk mengukur kualitas ringkasan atau hasil pemrosesan bahasa alami dengan membandingkan ringkasan yang dihasilkan dengan ringkasan referensi yang benar atau asli.
 
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
+Terdapat beberapa metrik ROUGE yang umumnya digunakan, seperti ROUGE-N (mengukur kesamaan n-gram antara ringkasan yang dihasilkan dan ringkasan referensi), ROUGE-L (mengukur kesamaan panjang rangkaian kata terpanjang antara ringkasan yang dihasilkan dan ringkasan referensi), dan ROUGE-W (mengukur kesamaan kata terbobot antara ringkasan yang dihasilkan dan ringkasan referensi). Penggunaan metrik ROUGE membantu mengukur sejauh mana ringkasan yang dihasilkan oleh model cocok dengan ringkasan yang diinginkan atau benar. Dalam fine-tuning transformer untuk generasi ringkasan, metrik ROUGE dapat digunakan sebagai panduan untuk mengevaluasi sejauh mana model dapat menghasilkan ringkasan yang mirip dengan referensi. Evaluasi ini penting untuk memastikan bahwa model menghasilkan ringkasan yang informatif dan relevan.
 
-## Emailware
+Untuk Pre-Trained nya kami menggunakan AutoTokenizer, AutoTokenizer adalah bagian dari perpustakaan Transformers oleh Hugging Face, yang menyediakan implementasi dan model-model transformer pre-trained. Tokenizer bertanggung jawab untuk mengonversi teks menjadi token, yaitu unit-unit terkecil yang dipahami oleh model transformer.
 
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
-
-## Credits
-
-This software uses the following open source packages:
-
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
-
-## Support
-
-<a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-<p>Or</p> 
-
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
 
 
 
