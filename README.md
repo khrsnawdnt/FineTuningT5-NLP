@@ -13,8 +13,8 @@
 <p align="center">
   <a href="#gambaran-umum">Gambaran Umum</a> •
   <a href="#persyaratan">Persyaratan</a> •
+  <a href="#instalasi">Instalasi</a>
   <a href="#Catatan">Catatan</a> •
-  <a href="#how-to-use">How to Use</a>
 </p>
 
 
@@ -34,16 +34,10 @@ Summarization adalah tugas pemrosesan bahasa alami (NLP) yang melibatkan penyusu
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/khrsnawdnt/FineTuningT5-NLP
 
-# Go into the repository
-$ cd electron-markdownify
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+# Run app
+$ npm run dev
 ```
 
 ## Catatan
