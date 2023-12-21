@@ -13,8 +13,8 @@
 <p align="center">
   <a href="#gambaran-umum">Gambaran Umum</a> •
   <a href="#persyaratan">Persyaratan</a> •
-  <a href="#instalasi">Instalasi</a>
-  <a href="#Catatan">Catatan</a> •
+  <a href="#instalasi">Instalasi</a> •
+  <a href="#Catatan">Catatan</a> 
 </p>
 
 
