@@ -51,6 +51,12 @@ Terdapat beberapa metrik ROUGE yang umumnya digunakan, seperti ROUGE-N (mengukur
 
 Untuk Pre-Trained nya kami menggunakan AutoTokenizer, AutoTokenizer adalah bagian dari perpustakaan Transformers oleh Hugging Face, yang menyediakan implementasi dan model-model transformer pre-trained. Tokenizer bertanggung jawab untuk mengonversi teks menjadi token, yaitu unit-unit terkecil yang dipahami oleh model transformer.
 
+## T5Model
+T5 (Text-To-Text Transfer Transformer) adalah model transformer yang dikembangkan oleh Google AI. Model ini diusulkan dalam makalah berjudul "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer" oleh Colin Raffel et al., dan dipresentasikan pada konferensi NeurIPS 2019.
+
+Fitur utama dari T5 adalah pendekatan "text-to-text", yang berarti bahwa model ini dirancang untuk menangani berbagai tugas pemrosesan bahasa alami (NLP) sebagai tugas "terjemahan" dari satu bentuk teks ke bentuk teks lainnya. Pendekatan ini bertujuan untuk menyatukan berbagai tugas NLP, seperti terjemahan, ringkasan, pertanyaan dan jawaban, dan lainnya, ke dalam formulasi umum.
+
+
 
 
 
